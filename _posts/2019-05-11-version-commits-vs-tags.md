@@ -4,10 +4,11 @@ title:  "Software versioning: commits vs. tags"
 date:   2019-05-11 13:57:19 -0400
 categories: software-development
 tags: [version, git, tag, commit]
+excerpt_separator: <!--more-->
 ---
 Some notes to myself about why I prefer to version source-controlled software
 using Git tags instead of commits:
-
+<!--more-->
 * Version commits pollute the commit history with messages irrelevant to changes
   in functionality
 * Version commits can create merge conflicts if a PR is based on an incremented
