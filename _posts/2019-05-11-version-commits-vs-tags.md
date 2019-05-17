@@ -2,7 +2,7 @@
 layout: post
 title:  "Software versioning: commits vs. tags"
 date:   2019-05-11 13:57:19 -0400
-categories: "software development"
+categories: software-development
 tags: [version, git, tag, commit]
 ---
 Some notes to myself about why I prefer to version source-controlled software
