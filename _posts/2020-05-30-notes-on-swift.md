@@ -13,6 +13,7 @@ Notes on reading about Swift, and what it makes me think of from other languages
 * Deconstruction with switch statements
 * Expressive type system
 * Autoclosures (nee call-by-name parameters)
+* trailing closures
 
 ## Go
 * defer
