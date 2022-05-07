@@ -13,17 +13,17 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-
-# Look here for settings:
-# https://github.com/jekyll/minima/blob/master/_config.yml
 title: Carl Gieringer's Github Blog
-author:
-  name: Carl Gieringer
+author: Carl Gieringer
 description: >- # this means to ignore newlines until "baseurl:"
   I work as a software engineer and practice insight meditation.
 show_excerpts: true
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://carlgieringer.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: carlgieringer
+github_username:  carlgieringer
+linkedin_username: carlgieringer
+rss: rss
 
 # Build settings
 markdown: kramdown
@@ -32,10 +32,6 @@ theme: minima
 minima:
   # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
   date_format: "%Y-%m-%d"
-  social_links:
-    twitter: carlgieringer
-    github:  carlgieringer
-    linkedin: carlgieringer
 
 plugins:
   - jekyll-feed
