@@ -1,4 +1,8 @@
-This post is a work-in-progress highlighting the important things I have learned (so far) working
+---
+title: What I have learned (so far) working at Google
+---
+
+This post is a work-in-progress highlighting the important things I have learned working
 at Google. It highlights some important professional and cultural issues that arise from working at
 a high-productivity organization like Google.
 
