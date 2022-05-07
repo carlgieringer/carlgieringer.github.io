@@ -1,3 +1,7 @@
+Some rough structured stream of consciousness thoughts (mostly for myself) on
+language similarities between Swift and other languages I knew before learning
+about Swift: C#, Scala, and Go.
+
 # What Swift has borrowed from other languages
 
 Notes on reading about Swift, and what it makes me think of from other languages
