@@ -1,12 +1,13 @@
 ---
 title: What I have learned (so far) working at Google
+last_modified: 2022-05-07
 ---
 
 This post is a work-in-progress highlighting the important things I have learned working
 at Google. It highlights some important professional and cultural issues that arise from working at
 a high-productivity organization like Google.
 
-# The importance of design docs
+## The importance of design docs
 
 Significant changes or projects at Google almost always start with a document. 
 The document usually has multiple approvers (people who must agree on the substance of the contents)
@@ -37,7 +38,7 @@ This documentation is often a summary of the "what" and "how" of the system with
 the "why" that was in the design doc. The documentation can link to the design doc for
 more background.
 
-# The importance of alternative solutions
+## The importance of alternative solutions
 
 Earlier in my career, I often thought that I had discovered the one right way to do something.
 This attitude is more common with smaller changes, such as a single line of code, a single 
@@ -57,14 +58,14 @@ Non-functional qualities:
 
 Wikipedia has an impressively long list of [examples](https://en.wikipedia.org/wiki/Non-functional_requirement#Examples).
 
-# The importance of a growth mindset
+## The importance of a growth mindset
 
 A company like Google hires talented people. I learned working there that talented people
 don't have any special abilities to know everything, and that they ask a lot of questions.
 Googlers often have a "I don't know how to do that, but I can learn" attitude because
 it's required in order to succeed at a company of that size with so many systems.
 
-# The importance of communicating status and change
+## The importance of communicating status and change
 
 In high productivity organizations, attention is a scarce resource. You often cannot rely
 on others to passively discover things. Instead, leaders recognize when it is important
