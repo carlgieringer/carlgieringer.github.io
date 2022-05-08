@@ -22,6 +22,7 @@ using Git tags instead of commits:
   to the commit on which the version commit is .
 
 Problems with versioning with Git tags:
+
 * Github doesn't (yet) provide protection of tags, so someone might delete them
   from the remote repository.  There are some community calls for the feature
   in the [Github Community Forum][forum] and [the unofficial Github issues repo][isaacs].
