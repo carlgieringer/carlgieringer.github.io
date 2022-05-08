@@ -11,7 +11,7 @@ layout: default
         {{ page.date | date: date_format }}
       </time>
       {%- if page.last_modified -%}
-        • modified 
+        • modified: 
         <time class="dt-published" datetime="{{ page.last_modified | date_to_xmlschema }}" itemprop="dateModified">
           {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
           {{ page.last_modified | date: date_format }}
@@ -20,6 +20,7 @@ layout: default
       {%- if page.author -%}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
       {%- endif -%}
+      • reading time: {{ content | reading_time_as_s }}
     </p>
   </header>
 
