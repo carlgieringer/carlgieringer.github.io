@@ -1,9 +1,7 @@
-# Javascript inheritence archaeology
-
 Or: obscure things about Javascript inheritence that I think I used to know, and wanted to remember, while learning Typescript.
 
 Javascript uses prototypical inheritance, and back in the bad ol' days before `Object.setPrototype` or `extends`, people used to
-do the following in order to setup prototypical inheritance in Javascript. (Not all of the 
+do the following in order to setup prototypical inheritance in Javascript.
 
 1. Create child and parent constructor functions (`function Child() { ... }`)
 
@@ -42,7 +40,7 @@ a bad name. People tried to circulate libraries for setting up inheritence to st
     `new Parent()`'s `constructor` is `Parent`, but we want instanes of `Child` to have `Child` as their constructor.
     To correct that: `Child.prototype.constructor = Child`.
 
-1. Copy any properties that were previously on the child constructor's `prototype` to thew new prototype.
+1. Copy any properties that were previously on the child constructor's `prototype` to the new prototype.
 
     Since we overwrote the child constructor's prototype in the last step, some thorough people would create a temporary reference to the old prototype
     and copy over any own-properties after overwriting it with `new Parent()`.
@@ -83,7 +81,7 @@ a bad name. People tried to circulate libraries for setting up inheritence to st
     automatically now](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends),
     I guess this is the Javascript way.
 
-References
+## References
 
 * http://crockford.com/javascript/prototypal.html
 * http://crockford.com/javascript/inheritance.html
