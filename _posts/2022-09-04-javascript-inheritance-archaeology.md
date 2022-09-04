@@ -28,12 +28,16 @@ do the following in order to setup prototypical inheritance in Javascript.
     * `prototype` equal to `Object.prototype`, and
     * `constructor` equal to the constructor function itself (i.e. `Child.prototype.constructor === Child` is true.)
 
-1. Set the child constructor's `prototype` to `new Parent()`
+1. Set the child constructor's `prototype` to `new Parent()`:
+
+    ```
+    Child.prototype = new Parent();
+    ```
 
     This was the fundamental step in creating prototypical inheritance.
     
 The following additional 'cleanup' steps were followed inconsistently, resulting in inconsistent inheritance patterns and giving Javascript
-a bad name. People tried to circulate libraries for setting up inheritence to standardize the process.
+a bad name (which was not entirely undeserved, since users would have benefited from built-ins for inheritance like we have today.) People tried to circulate libraries for setting up inheritence to standardize the process.
     
 1. Set the child constructor's `prototype.constructor` to the child constructor.
 
@@ -80,6 +84,8 @@ a bad name. People tried to circulate libraries for setting up inheritence to st
     I'm also not sure if this would have been possible prior to `Object.setPrototypeOf`. But since `extends` [does this
     automatically now](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends),
     I guess this is the Javascript way.
+    
+Did I miss something? Maybe some other common cleanup step that often was included in historical inheritance libraries? Let me know via Twitter!
 
 ## References
 
