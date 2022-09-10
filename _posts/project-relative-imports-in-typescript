@@ -1,0 +1,80 @@
+--
+title: Project-relative imports in TypeScript
+last_modified: 2022-09-10
+---
+
+My preferred way to configure imports in a TypeScript project.
+
+## Conclusion up front
+
+For a directory structure like the following:
+
+```
+howdju-mobile-app
++-node_modules
+| +-services
+| | +-...
++-src
+| +-services
+| | +-submitUrls.ts
+| +-screens
+| | submission
+| | +-SubmitScreen.tsx
+| | +-...
++-package.json
++-tsconfig.json
+```
+
+Use the following configuration (`tsconfig.json`):
+
+```json
+{
+  "compilerOptions": {
+  ...
+    "baseUrl": "src",                       /* Base directory to resolve non-absolute module names. */
+    "paths": {
+      "@/*": ["*"],
+    },
+  }
+}
+```
+
+Which allows the following convention for importing modules from your package:
+
+```
+// screens/SubmitScreen.tsc
+import { inferSubmitUrl } from '@/services/submitUrls';
+```
+
+And avoids collisions between your project's top-level directories and `node_modules`.
+
+Source: [this Stackoverflow answer](https://stackoverflow.com/a/71618554/39396).
+
+## Background
+
+By default, packages must import like `import { inferSubmitUrl } from '../../services/submitUrls';`.
+It is tedious to figure out how many levels of parent references are necessary, and may be tedious
+to move files to different directory levels.
+
+Existing recommendations for configuring a 'package-relative' include:
+
+* Create a new `paths` entry for each new top-level import:
+
+    ```
+    {
+      "compilerOptions": {
+        "paths": {
+          "@app/*": ["app/*"],
+          "@config/*": ["app/_config/*"],
+          "@environment/*": ["environments/*"],
+          "@shared/*": ["app/_shared/*"],
+          "@helpers/*": ["helpers/*"]
+        },
+      }
+    }
+    ```
+    
+    Which is tedious to maintain and still has the possibility of colliding with a directory of
+    `node_modules`.
+    
+* ... TODO
