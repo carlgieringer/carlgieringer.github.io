@@ -1,3 +1,13 @@
+--
+title: Javascript inheritance archaeology
+last_modified: 2022-09-05
+---
+
+This post highlights some professional insights I have gained about software engineering working at
+Google.
+
+## 'Doc-driven design'
+
 Or: obscure things about Javascript inheritence that I think I used to know, and wanted to remember, while learning Typescript.
 
 Javascript uses prototypical inheritance, and back in the bad ol' days before `Object.setPrototype` or `extends`, people used to
