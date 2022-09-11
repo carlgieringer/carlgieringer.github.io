@@ -75,6 +75,8 @@ Existing recommendations for configuring a 'package-relative' include:
     ```
     
     Which is tedious to maintain and still has the possibility of colliding with a directory of
-    `node_modules`.
+    `node_modules`. [Stackoverflow answer.](https://stackoverflow.com/a/43330003/39396).
     
-* ... TODO
+* To prefix the imports with something like `app` which is unnecessarily long and still has the 
+  possibility of collisions with `node_modules`.
+  [Typescript Reference](https://www.typescriptlang.org/tsconfig#paths).
