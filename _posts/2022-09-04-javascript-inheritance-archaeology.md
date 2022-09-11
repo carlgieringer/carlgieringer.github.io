@@ -1,4 +1,4 @@
---
+---
 title: Javascript inheritance archaeology
 last_modified: 2022-09-05
 ---
