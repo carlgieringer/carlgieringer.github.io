@@ -46,7 +46,8 @@ attitude is more common with smaller changes, such as a single line of code, a s
 single class, etc. But with larger systems, it soon becomes clear that any particular design
 embodies a balance of the non-functional qualities.
 
-This realization is the "engineering" of software engineering. Programmers write code. Engineers
+This realization is one part of the "engineering" of software engineering. (Others include coordinating 
+groups of people and managing change over time.)  Programmers write code. Engineers
 analyze problems and weigh the the relative tradeoffs of different designs.
 
 Non-functional qualities:
